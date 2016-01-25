@@ -10,7 +10,7 @@ var customGetUrlParamsParser = null;
 //Servername (optional) and path and name name of QGIS Server FCGI-file
 //either with or without server-name - without servername recommended for easier porting to other servers
 //do not add a ? or & after the .fcgi extension
-var serverAndCGI = "/cgi-bin/qgis_mapserv.fcgi";
+var serverAndCGI = "/wms";
 
 //Optional url for print server hosted on a different server. Default: same as above.
 // var serverAndCGI = "http://otherserver/cgi-bin/qgis_mapserv.fcgi";

@@ -5,20 +5,20 @@ set -e
 # ./install.sh /path_to/qgis_project myurl.local false true false
 
 # Ask for qgis projects dir - the one where your .qgs files are
-QGISPROJECTSDIR=${1-$HOME/QGIS_projects}
+QGISPROJECTSDIR=/var/www/html/GIAP-Wyrys/nowytarg/PROJEKTY
 
 # The url where the web client will be available
-QGISURL=${2-qgis-web-client.localhost}
+QGISURL=mapy.uslugi.giap.pl/
 
 # Allows using shorter urls like
 # QGISURL/maps/mymap and QGISURL/wms/mymap
-ENABLEURLREWRITE=${3-true}
+ENABLEURLREWRITE=true
 
 #Puts the vhost file in /etc/apache2/sites-available/default
-OVERRIDEDEFAULTVHOST=${4-false}
+OVERRIDEDEFAULTVHOST=false
 
 #calls apachectl restart
-RESTARTAPACHE=${5-true}
+RESTARTAPACHE=true
 
 AUTOACCEPT=${6-false}
 
