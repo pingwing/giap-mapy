@@ -211,7 +211,7 @@ function loadWMSConfig(topicName) {
 		useGetProjectSettings: useGetProjectSettings,
 		layerOptions: {
 			buffer: 0,
-			singleTile: true,
+			singleTile: false,
 			ratio: 1
 		},
 		layerParams: {
